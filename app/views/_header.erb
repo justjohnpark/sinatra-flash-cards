@@ -1,0 +1,8 @@
+<a href="/"><h3>Flash Cards</h3></a>
+<div class="nav">
+<% if logged_in? %>
+  <a href="/users/profile"><h5>Profile</h5></a>  <a href="/logout"><h5>Logout</h5></a>
+<% else %>
+  <a href="/login"><h5>Login</h5></a>
+<% end %>
+</div>

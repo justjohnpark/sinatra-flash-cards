@@ -1,0 +1,14 @@
+<div class="header">
+  <%= erb :'_header' %>
+</div>
+
+<h1>Login</h1>
+<%= erb :'_flash' %>
+<form action='/login' method="post">
+  <input type="text" name="email" placeholder="Email address" autofocus="autofocus"/>
+  <input type="password" name="password" placeholder="Password"/>
+  <button type="submit">Login</button>
+  <!-- <input type="submit" value="Login"/> -->
+</form>
+
+<a href="/register" class=""><h6>Sign up</h6></a>

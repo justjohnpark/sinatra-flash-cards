@@ -1,0 +1,13 @@
+<div class="header">
+  <%= erb :'_header' %>
+</div>
+
+<div class="container">
+  <%= erb :'_flash' %>
+
+  <h2 class="question"><%= @card.question %></h2>
+  <form action="/cards/<%= @card.id %>" method="post">
+    <input class="answer" type="text" name="answer" placeholder="Answer" autocomplete="off" autofocus="autofocus"/>
+    <button type="submit">Submit</button>
+  </form>
+</div>

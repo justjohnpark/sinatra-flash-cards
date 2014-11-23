@@ -1,0 +1,19 @@
+<div class="header">
+  <%= erb :'_header' %>
+</div>
+
+<div class="container">
+  <h1><%= @name %></h1>
+
+  <form action="/decks/create" method="post">
+  <% @num_questions.times do |i| %>
+  <div class="new_card">
+      <% q_id = "Q" + i.to_s %>
+      <% a_id = "A" + i.to_s %>
+      <input class="answer" type="text" name="<%= q_id %>" placeholder="Question" autocomplete="off"/>
+      <input class="answer" type="text" name="<%= a_id %>" placeholder="Answer" autocomplete="off"/>
+    </div>
+  <% end %>
+  <button type="submit">Submit</button>
+  </form>
+</div>

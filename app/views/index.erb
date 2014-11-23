@@ -1,0 +1,26 @@
+<div class="header">
+  <%= erb :'_header' %>
+</div>
+
+<%= erb :'_flash' %>
+
+<div class="container">
+  <h1>Decks</h1>
+  <% @decks.each do |deck| %>
+  <!-- <div class="deck_listing"> -->
+    <a href="/decks/<%= deck.id %>">
+      <div class="link_box">
+        <h3><%= deck.name %></h3>
+        <h5><%= deck.cards.length %> cards</h5>
+      </div>
+    </a>
+  <% end %>
+
+  <a href="/decks/new">
+    <div class="link_box">
+      <h3> + </h3>
+    </div>
+  </a>
+</div>
+
+

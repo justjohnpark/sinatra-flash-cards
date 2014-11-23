@@ -1,0 +1,24 @@
+<div class="header">
+  <%= erb :'_header' %>
+</div>
+
+<div class="container">
+  <h6>Completed on <%= @round.created_at.strftime("%m/%d/%y") %>.</h6>
+  <h1><%= @round.deck.name %></h1>
+  <h2>You answered <%= @stats[:correct] %> of <%= @stats[:total] %> correctly!</h2>
+  <h4>That's <%= (@stats[:correct].to_f / @stats[:total].to_f * 100).to_i%>%.</h4>
+<!--   <form action="/" method="get">
+    <input type="submit" value="View Decks"/>
+  </form> -->
+  <% unless @missed.empty? %>
+    <h2>Questions to work on:</h2>
+    <% @missed.each do |question| %>
+      <h4><%= question %></h4>
+    <% end %>
+  <% end %>
+
+
+
+  </br></br>
+  <a href="/"><h3 class="link_box">View decks</h3></a>
+</div>

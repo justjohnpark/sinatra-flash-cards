@@ -1,0 +1,5 @@
+  <% if flash[:error] %>
+    <h4 class="incorrect"><%= flash[:error] %></h4>
+  <% elsif flash[:notice] %>
+    <h4 class="correct"><%= flash[:notice] %></h4>
+  <% end %>

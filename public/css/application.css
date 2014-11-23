@@ -1,0 +1,143 @@
+.container {
+  margin: 3em auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+}
+th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: #394034;
+}
+
+input, button {
+  display:block;
+  margin: 1em auto 1em;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  height: 2em;
+}
+
+.header * {
+  display: inline;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.header {
+  background-color: #394034;
+  padding: 1em 0 1em 1em;
+  margin-bottom: 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*.header a:hover {*/
+a:hover {
+  text-decoration: underline;
+}
+
+.question {
+  text-align: center;
+}
+
+.nav {
+  float:right;
+  padding-right: 1em;
+}
+
+.nav h5 {
+  margin-left: 1em;
+}
+
+.correct {
+  color: #548C55;
+}
+
+.incorrect, .error {
+  color: #851C1C;
+}
+
+.container a {
+  color: #394034;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.deck_listing {
+  margin: 2em auto 0;
+}
+
+.deck_listing h5, .deck_listing h3 {
+  margin: .2em;
+}
+
+.profile_round {
+  margin: 2em auto;
+  clear: both;
+  width: 67%;
+}
+
+.profile_round h5, .profile_round h3, .profile_round h6 {
+}
+
+.link_box, button {
+  background-color: #394034;
+  color: #ffffff;
+  font-weight: 100;
+  padding: .5em 1em;
+  border: none;
+}
+
+.link_box {
+  width: 30%;
+  display: block;
+  margin: 1em auto;
+  padding: 1em 2em;
+}
+
+.link_box h3, .link_box h5 {
+  color: #ffffff;
+  margin: .2em;
+  font-weight: 100;
+}
+
+.link_box:hover, button:hover {
+  background-color: #4D5348;
+}
+
+.profile_round_left {
+  display: inline-block;
+  float: left;
+}
+
+.profile_round_left h3 {
+  display: inline-block;
+  margin: .5em 0;
+}
+
+.profile_round_left h6 {
+  display: inline-block;
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+
+.profile_round h5 {
+  margin: .5em 0;
+  display: inline-block;
+  float: right;
+}
+
+.new_card {
+  margin: 3em auto;
+}

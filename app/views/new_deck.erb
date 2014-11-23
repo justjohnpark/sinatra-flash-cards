@@ -1,0 +1,13 @@
+<div class="header">
+  <%= erb :'_header' %>
+</div>
+
+<div class="container">
+  <h1>New Deck</h1>
+  <%= erb :'_flash' %>
+  <form action="/decks/new" method="post">
+    <input class="answer" type="text" name="name" placeholder="Name of Deck" autocomplete="off" autofocus="autofocus"/>
+    <input class="answer" type="text" name="num_questions" placeholder="Number of Questions" autocomplete="off"/>
+    <button type="submit">Submit</button>
+  </form>
+</div>

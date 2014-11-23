@@ -1,0 +1,24 @@
+<div class="header">
+  <%= erb :'_header' %>
+</div>
+<div class="container">
+  <h1><%= @name %></h1>
+
+  <% @rounds.each do |round| %>
+    <% stats = round.get_statistics %>
+
+    <div class="profile_round">
+      <div class="profile_round_left">
+        <a href="/round/<%= round.id %>"><h3><%= round.deck.name %></h3></a>
+        <h6><%= round.created_at.strftime("%m/%d/%y") %></h6>
+      </div>
+      <h5><%= stats[:correct] %> of <%= stats[:total] %> correct</h5>
+    </div>
+  <% end %>
+
+  </br></br></br></br>
+  <a href="/"><h3 class="link_box">View decks</h3></a>
+</div>
+
+
+
